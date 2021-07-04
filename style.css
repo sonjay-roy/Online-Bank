@@ -1,0 +1,33 @@
+body{
+    padding: 100px;
+}
+.submit-area{
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-right: 4px solid orange;
+   
+
+    box-shadow: 0px 5px 12px 0px silver;
+}
+#transition-area{
+    display: none;
+}
+.common-cls{
+    padding: 15px 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: darkblue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 0px silver;
+}
+.diposit{
+    background-color: #bfedf5;
+}
+.withrow{
+    background-color: #f6e6b1;
+}
+.balance{
+    background-color: #d7b9fa;
+}
