@@ -27,6 +27,23 @@ updateSpanText("currentBalance", depositNumber);
 document.getElementById("depositAmount").value ="";
 })
 
+//withdeaw button event handler
+const withdrawBtn = document.getElementById("addwithdrow");
+withdrawBtn.addEventListener("click", function () {
+ const withdrawNumber = getInputNumber("withdrawAmount");
+ 
+ updateSpanText("currentwithdrow", withdrawNumber);
+ updateSpanText("currentBalance",-1 * withdrawNumber);
+
+
+ document.getElementById("withdrawAmount").value ="";
+})
+
+function getInputNumber(id) {
+   const amount = document.getElementById(id).value;
+   const amountNumber = parseFloat(amount);
+   return amountNumber;
+}
 
 function updateSpanText(id,depositNumber) {
    const current= document.getElementById(id).innerText;
